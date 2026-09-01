@@ -1,0 +1,205 @@
+:root {
+  /* ========================================
+     Brand Colors
+     ======================================== */
+
+  --color-primary: #1f4d3a;
+  --color-primary-dark: #123527;
+  --color-primary-light: #3f735d;
+
+  --color-secondary: #c89b3c;
+  --color-secondary-dark: #9f7728;
+  --color-secondary-light: #dfbf72;
+
+  --color-accent: #1f4d3a;
+
+
+  /* ========================================
+     Background Colors
+     ======================================== */
+
+  --color-background: #f7f7f4;
+  --color-background-alt: #eef1ed;
+
+  --color-surface: #ffffff;
+  --color-surface-dark: #17221d;
+
+
+  /* ========================================
+     Text Colors
+     ======================================== */
+
+  --color-text: #1c2822;
+  --color-text-light: #ffffff;
+
+  --color-text-muted: #68756e;
+  --color-text-light-muted: #c8d1cc;
+
+
+  /* ========================================
+     Border Colors
+     ======================================== */
+
+  --color-border: #dce2dd;
+  --color-border-light: #e9edea;
+  --color-border-dark: #b8c2bc;
+
+
+  /* ========================================
+     Status Colors
+     ======================================== */
+
+  --color-success: #3f8f5b;
+  --color-warning: #d39b2e;
+  --color-danger: #c94b4b;
+  --color-info: #3d7899;
+
+
+  /* ========================================
+     Basic Colors
+     ======================================== */
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-transparent: transparent;
+
+
+  /* ========================================
+     Overlay Colors
+     ======================================== */
+
+  --overlay-dark: rgba(18, 53, 39, 0.72);
+  --overlay-darker: rgba(18, 53, 39, 0.86);
+  --overlay-light: rgba(255, 255, 255, 0.12);
+
+
+  /* ========================================
+     Typography
+     ======================================== */
+
+  --font-family-base:
+    "Cairo",
+    "Segoe UI",
+    Tahoma,
+    Arial,
+    sans-serif;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+  --font-size-5xl: 3rem;
+
+
+  /* ========================================
+     Font Weights
+     ======================================== */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+
+  /* ========================================
+     Border Radius
+     ======================================== */
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+
+  /* ========================================
+     Shadows
+     ======================================== */
+
+  --shadow-sm:
+    0 2px 8px rgba(20, 35, 28, 0.06);
+
+  --shadow-md:
+    0 8px 24px rgba(20, 35, 28, 0.10);
+
+  --shadow-lg:
+    0 16px 40px rgba(20, 35, 28, 0.14);
+
+  --shadow-xl:
+    0 24px 60px rgba(20, 35, 28, 0.18);
+
+
+  /* ========================================
+     Layout
+     ======================================== */
+
+  --container-width: 1280px;
+  --container-padding: 24px;
+
+  --header-height: 82px;
+
+
+  /* ========================================
+     Spacing
+     ======================================== */
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+
+  /* ========================================
+     Transitions
+     ======================================== */
+
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+
+
+  /* ========================================
+     Z-Index
+     ======================================== */
+
+  --z-dropdown: 100;
+  --z-sticky: 500;
+  --z-header: 900;
+  --z-overlay: 1000;
+  --z-modal: 1100;
+  --z-toast: 1200;
+}
+
+
+/* ========================================
+   Responsive Variables
+   ======================================== */
+
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 16px;
+
+    --header-height: 72px;
+
+    --font-size-3xl: 1.75rem;
+    --font-size-4xl: 2.125rem;
+    --font-size-5xl: 2.5rem;
+
+    --space-16: 48px;
+    --space-20: 64px;
+    --space-24: 72px;
+  }
+}
