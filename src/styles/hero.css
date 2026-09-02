@@ -1,0 +1,758 @@
+/* ========================================
+   Hero
+======================================== */
+
+.hero {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 620px;
+
+  overflow: hidden;
+
+  background:
+    var(--color-secondary-dark);
+
+  isolation: isolate;
+}
+
+
+/* ========================================
+   Background
+======================================== */
+
+.hero-background {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 0;
+
+  overflow: hidden;
+}
+
+
+/* ========================================
+   Background Slide
+======================================== */
+
+.hero-slide {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  opacity: 0;
+
+  transform:
+    scale(1.04);
+
+  transition:
+    opacity 1000ms ease,
+    transform 7000ms ease;
+
+  will-change:
+    opacity,
+    transform;
+
+  -webkit-transform:
+    scale(1.04);
+
+  -moz-transform:
+    scale(1.04);
+
+  -ms-transform:
+    scale(1.04);
+
+  -o-transform:
+    scale(1.04);
+
+  -webkit-transition:
+    opacity 1000ms ease,
+    transform 7000ms ease;
+
+  -moz-transition:
+    opacity 1000ms ease,
+    transform 7000ms ease;
+
+  -ms-transition:
+    opacity 1000ms ease,
+    transform 7000ms ease;
+
+  -o-transition:
+    opacity 1000ms ease,
+    transform 7000ms ease;
+}
+
+
+/* ========================================
+   Background Slide Image
+======================================== */
+
+.hero-slide img {
+  position: absolute;
+
+  inset: 0;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  max-width: none;
+
+  user-select: none;
+
+  pointer-events: none;
+}
+
+
+/* ========================================
+   Active Slide
+======================================== */
+
+.hero-slide-active {
+  opacity: 1;
+
+  transform:
+    scale(1);
+
+  -webkit-transform:
+    scale(1);
+
+  -moz-transform:
+    scale(1);
+
+  -ms-transform:
+    scale(1);
+
+  -o-transform:
+    scale(1);
+}
+
+
+/* ========================================
+   Hero Overlay
+======================================== */
+
+.hero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(22, 74, 42, 0.02) 0%,
+      rgba(22, 74, 42, 0.06) 40%,
+      rgba(22, 74, 42, 0.16) 100%
+    );
+}
+
+
+/* ========================================
+   Hero Container
+======================================== */
+
+.hero-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(
+    calc(100% - 48px),
+    var(--container-width)
+  );
+
+  min-height: 752px;
+
+  margin-inline: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  /*
+    يتبع اتجاه الصفحة
+    RTL / LTR
+  */
+
+  justify-content: flex-start;
+
+  direction: inherit;
+}
+
+
+/* ========================================
+   Content Wrapper
+======================================== */
+
+.hero-content-wrapper {
+  width: min(
+    540px,
+    46%
+  );
+
+  margin: 0;
+}
+
+
+/* ========================================
+   Content Card
+======================================== */
+
+.hero-content {
+  position: relative;
+
+  width: 100%;
+
+  padding: 42px 44px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.18);
+
+  border-radius:
+    var(--radius-xl);
+
+  background:
+    rgba(255, 255, 255, 0.15);
+
+  backdrop-filter:
+    blur(18px);
+
+  -webkit-backdrop-filter:
+    blur(18px);
+
+  box-shadow:
+    0 20px 60px
+    rgba(0, 0, 0, 0.12);
+
+  text-align: start;
+
+  animation:
+    heroContentIn 700ms ease both;
+}
+
+
+/* ========================================
+   Content Animation
+======================================== */
+
+@keyframes heroContentIn {
+  from {
+    opacity: 0;
+
+    transform:
+      translateX(40px);
+
+    -webkit-transform:
+      translateX(40px);
+
+    -moz-transform:
+      translateX(40px);
+
+    -ms-transform:
+      translateX(40px);
+
+    -o-transform:
+      translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateX(0);
+
+    -webkit-transform:
+      translateX(0);
+
+    -moz-transform:
+      translateX(0);
+
+    -ms-transform:
+      translateX(0);
+
+    -o-transform:
+      translateX(0);
+  }
+}
+
+
+/* ========================================
+   Eyebrow
+======================================== */
+
+.hero-eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+
+  margin-bottom: 14px;
+
+  padding:
+    6px 12px;
+
+  border-radius:
+    999px;
+
+  background:
+    #9f7728;
+
+  color:
+    #ffffff;
+
+  font-size:
+    0.8rem;
+
+  font-weight:
+    600;
+}
+
+
+/* ========================================
+   Title
+======================================== */
+
+.hero-title {
+  margin: 0;
+
+  max-width: 500px;
+
+  color:
+    var(--color-white);
+
+  font-size:
+    clamp(
+      2rem,
+      4vw,
+      3.4rem
+    );
+
+  font-weight:
+    700;
+
+  line-height:
+    1.25;
+
+  letter-spacing:
+    -0.03em;
+}
+
+
+/* ========================================
+   Description
+======================================== */
+
+.hero-description {
+  margin:
+    18px 0 28px;
+
+  max-width:
+    470px;
+
+  color:
+    rgba(255, 255, 255, 0.84);
+
+  font-size:
+    1rem;
+
+  line-height:
+    1.9;
+}
+
+
+/* ========================================
+   Button
+======================================== */
+
+.hero-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  min-height: 48px;
+
+  padding-inline:
+    20px;
+
+  border-radius:
+    var(--radius-md);
+
+  background:
+    var(--color-secondary);
+
+  color:
+    var(--color-white);
+
+  font-size:
+    0.9rem;
+
+  font-weight:
+    600;
+
+  text-decoration:
+    none;
+
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+
+.hero-button:hover {
+  background:
+    var(--color-secondary-dark);
+
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 8px 22px
+    rgba(22, 74, 42, 0.25);
+
+  -webkit-transform:
+    translateY(-2px);
+
+  -moz-transform:
+    translateY(-2px);
+
+  -ms-transform:
+    translateY(-2px);
+
+  -o-transform:
+    translateY(-2px);
+}
+
+
+/* ========================================
+   Pagination
+======================================== */
+
+.hero-pagination {
+  position: absolute;
+
+  z-index: 3;
+
+  bottom: 32px;
+
+  left: 50%;
+
+  transform:
+    translateX(-50%);
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  -webkit-transform:
+    translateX(-50%);
+
+  -moz-transform:
+    translateX(-50%);
+
+  -ms-transform:
+    translateX(-50%);
+
+  -o-transform:
+    translateX(-50%);
+}
+
+
+/* ========================================
+   Pagination Item
+======================================== */
+
+.hero-pagination-item {
+  width: 32px;
+  height: 4px;
+  padding: 0;
+  border: none;
+  border-radius:    999px;
+  background:    rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  overflow: hidden;
+  transition:    width 250ms ease,    background-color 250ms ease;
+  -webkit-transition:    width 250ms ease,    background-color 250ms ease;
+  -moz-transition:    width 250ms ease,    background-color 250ms ease;
+  -ms-transition:    width 250ms ease,    background-color 250ms ease;
+  -o-transition:    width 250ms ease,    background-color 250ms ease;
+}
+
+
+.hero-pagination-item span {
+  display: block;
+
+  width: 0;
+
+  height: 100%;
+
+  background:
+    var(--color-secondary-dark);
+}
+
+
+/* ========================================
+   Active Pagination
+======================================== */
+
+.hero-pagination-item.active {
+  width: 54px;
+
+  background:
+    rgba(255, 255, 255, 0.2);
+}
+
+
+.hero-pagination-item.active span {
+  width: 100%;
+
+  transition:
+    width 10000ms linear;
+}
+
+
+/* ========================================
+   Tablet
+======================================== */
+
+@media (max-width: 900px) {
+  .hero {
+    min-height:
+      560px;
+  }
+
+
+  .hero-container {
+    min-height:
+      560px;
+  }
+
+
+  .hero-content-wrapper {
+    width:
+      min(
+        520px,
+        58%
+      );
+  }
+
+
+  .hero-content {
+    padding:
+      34px 36px;
+  }
+}
+
+
+/* ========================================
+   Mobile
+======================================== */
+
+@media (max-width: 768px) {
+  .hero {
+    min-height:
+      620px;
+  }
+
+
+  .hero-container {
+    min-height:
+      620px;
+
+    width:
+      min(
+        calc(100% - 32px),
+        var(--container-width)
+      );
+
+    align-items:
+      flex-end;
+
+    justify-content:
+      center;
+
+    padding-bottom:
+      82px;
+
+    direction:
+      inherit;
+  }
+
+
+  .hero-content-wrapper {
+    width:
+      100%;
+
+    margin:
+      0;
+  }
+
+
+  .hero-content {
+    padding:
+      30px 26px;
+
+    border-radius:
+      var(--radius-lg);
+
+    background:
+      rgba(255, 255, 255, 0.17);
+
+    backdrop-filter:
+      blur(14px);
+
+    -webkit-backdrop-filter:
+      blur(14px);
+  }
+
+
+  .hero-title {
+    font-size:
+      clamp(
+        1.8rem,
+        8vw,
+        2.5rem
+      );
+  }
+
+
+  .hero-description {
+    font-size:
+      0.9rem;
+
+    line-height:
+      1.8;
+  }
+
+
+  .hero-pagination {
+    bottom:
+      28px;
+  }
+}
+
+
+/* ========================================
+   Small Mobile
+======================================== */
+
+@media (max-width: 480px) {
+  .hero {
+    min-height:
+      580px;
+  }
+
+
+  .hero-container {
+    min-height:
+      580px;
+
+    width:
+      calc(100% - 24px);
+  }
+
+
+  .hero-content {
+    padding:
+      26px 22px;
+  }
+
+
+  .hero-eyebrow {
+    font-size:
+      0.74rem;
+  }
+
+
+  .hero-title {
+    font-size:
+      1.75rem;
+  }
+
+
+  .hero-description {
+    margin:
+      14px 0 22px;
+
+    font-size:
+      0.85rem;
+  }
+
+
+  .hero-button {
+    min-height:
+      44px;
+
+    padding-inline:
+      17px;
+
+    font-size:
+      0.84rem;
+  }
+}
+
+
+/* ========================================
+   Reduced Motion
+======================================== */
+
+@media (
+  prefers-reduced-motion: reduce
+) {
+  .hero-slide {
+    transition:
+      none;
+
+    transform:
+      none;
+  }
+
+
+  .hero-content {
+    animation:
+      none;
+  }
+
+
+  .hero-pagination-item {
+    transition:
+      none;
+  }
+
+
+  .hero-pagination-item.active span {
+    transition:
+      none;
+
+    width:
+      100%;
+  }
+
+
+  .hero-button {
+    transition:
+      none;
+  }
+}

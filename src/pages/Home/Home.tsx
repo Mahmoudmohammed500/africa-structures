@@ -1,7 +1,13 @@
+import Hero from "../../components/common/Home/Hero";
+import CompanyVideo from "./CompanyVideo/CompanyVideo";
+import HistoricalOverview from "./HistoricalOverview/HistoricalOverview";
+
 export default function Home() {
   return (
     <>
-    <h1>Home</h1>
+    <Hero />
+    <HistoricalOverview />
+    <CompanyVideo />
     </>
   );
 }

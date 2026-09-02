@@ -1,0 +1,114 @@
+/* ========================================
+   Section Heading
+   ======================================== */
+
+.section-heading {
+  width: 100%;
+  margin-inline: auto;
+  margin-bottom: 4.5rem;
+}
+
+.section-heading--center {
+  max-width: 760px;
+  text-align: center;
+}
+
+.section-heading--start {
+  max-width: 760px;
+  text-align: start;
+}
+
+
+/* ========================================
+   Eyebrow
+   ======================================== */
+
+.section-heading__eyebrow {
+  display: inline-flex;
+  align-items: center;
+
+  margin-bottom: 0.75rem;
+
+  color: var(--color-secondary);
+
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+}
+
+
+/* ========================================
+   Title
+   ======================================== */
+
+.section-heading__title {
+  margin: 0;
+
+  color: var(--color-primary-dark);
+
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+
+/* ========================================
+   Decorative Line
+   ======================================== */
+
+.section-heading__line {
+  display: block;
+
+  width: 64px;
+  height: 3px;
+
+  margin-top: 1.25rem;
+
+  background: var(--color-secondary);
+
+  border-radius: var(--radius-full);
+}
+
+.section-heading--center .section-heading__line {
+  margin-inline: auto;
+}
+
+
+/* ========================================
+   Description
+   ======================================== */
+
+.section-heading__description {
+  max-width: 680px;
+
+  margin-top: 1.25rem;
+
+  color: var(--color-text-muted);
+
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.section-heading--center .section-heading__description {
+  margin-inline: auto;
+}
+
+
+/* ========================================
+   Responsive
+   ======================================== */
+
+@media (max-width: 768px) {
+  .section-heading {
+    margin-bottom: 3rem;
+  }
+
+  .section-heading__title {
+    font-size: 1.9rem;
+  }
+
+  .section-heading__description {
+    font-size: 0.95rem;
+  }
+}

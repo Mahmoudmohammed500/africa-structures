@@ -20,16 +20,12 @@ export const navigationItems: NavigationItem[] = [
         hash: "hero",
       },
       {
-        labelKey: "nav.homeSections.pillars",
-        hash: "pillars",
+        labelKey: "nav.homeSections.historical",
+        hash: "about-overview",
       },
       {
-        labelKey: "nav.homeSections.vision",
-        hash: "vision",
-      },
-      {
-        labelKey: "nav.homeSections.achievements",
-        hash: "achievements",
+        labelKey: "nav.homeSections.video",
+        hash: "company-video",
       },
     ],
   },
