@@ -29,30 +29,26 @@ export const navigationItems: NavigationItem[] = [
       },
     ],
   },
+{
+  path: "/about",
+  labelKey: "nav.about",
 
-  {
-    path: "/about",
-    labelKey: "nav.about",
+  children: [
+    {
+      labelKey: "nav.aboutSections.overview",
+      hash: "about-intro",
+    },
+    {
+      labelKey: "nav.aboutSections.vision",
+      hash: "vision-goal",
+    },
+    {
+      labelKey: "nav.aboutSections.location",
+      hash: "company-location",
+    },
+  ],
+},
 
-    children: [
-      {
-        labelKey: "nav.aboutSections.overview",
-        hash: "about-overview",
-      },
-      {
-        labelKey: "nav.aboutSections.vision",
-        hash: "company-vision",
-      },
-      {
-        labelKey: "nav.aboutSections.mission",
-        hash: "company-mission",
-      },
-      {
-        labelKey: "nav.aboutSections.values",
-        hash: "company-values",
-      },
-    ],
-  },
 
   {
     path: "/projects",

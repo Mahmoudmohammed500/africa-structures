@@ -1,11 +1,92 @@
+import {
+  useEffect,
+  useRef,
+} from "react";
+
 import { useTranslation } from "react-i18next";
 
 import companyVideo from "../../../assets/company-video.mp4";
 
 import SectionHeading from "../../../components/common/SectionHeading/SectionHeading";
 
+
 const CompanyVideo = () => {
   const { t } = useTranslation();
+
+  const videoRef =
+    useRef<HTMLVideoElement | null>(null);
+
+
+  /* =========================================================
+     Auto Play Video When Section Enters Viewport
+  ========================================================= */
+
+  useEffect(() => {
+    const video = videoRef.current;
+
+    if (!video) {
+      return;
+    }
+
+    const section =
+      document.getElementById("company-video");
+
+    if (!section) {
+      return;
+    }
+
+
+    const observer =
+      new IntersectionObserver(
+        (entries) => {
+          const entry = entries[0];
+
+          if (!entry) {
+            return;
+          }
+
+
+          /*
+           * Start video when the section becomes visible.
+           */
+          if (entry.isIntersecting) {
+            video
+              .play()
+              .catch(() => {
+                /*
+                 * Autoplay can still be blocked by
+                 * the browser in some situations.
+                 */
+              });
+          }
+
+
+          /*
+           * Pause video when the section leaves
+           * the viewport.
+           */
+          else {
+            video.pause();
+          }
+        },
+        {
+          /*
+           * Start when around 30% of the section
+           * becomes visible.
+           */
+          threshold: 0.3,
+        }
+      );
+
+
+    observer.observe(section);
+
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
 
   return (
     <section
@@ -20,6 +101,7 @@ const CompanyVideo = () => {
       id="company-video"
       aria-labelledby="company-video-title"
     >
+
       <div
         className="
           container
@@ -28,16 +110,28 @@ const CompanyVideo = () => {
           sm:w-[min(100%-3rem,var(--container-width))]
         "
       >
-        {/* Section Heading */}
+
+        {/* =====================================================
+            Section Heading
+        ===================================================== */}
+
         <SectionHeading
           eyebrow={t("companyVideo.eyebrow")}
           title={t("companyVideo.title")}
           description={t("companyVideo.description")}
         />
 
-        {/* Video Wrapper */}
+
+        {/* =====================================================
+            Video Wrapper
+        ===================================================== */}
+
         <div className="mx-auto w-full max-w-6xl">
-          {/* Outer Frame */}
+
+          {/* ===================================================
+              Outer Frame
+          =================================================== */}
+
           <div
             className="
               relative
@@ -53,7 +147,11 @@ const CompanyVideo = () => {
               lg:p-4
             "
           >
-            {/* Top Gold Accent */}
+
+            {/* =================================================
+                Top Gold Accent
+            ================================================= */}
+
             <span
               className="
                 pointer-events-none
@@ -71,7 +169,11 @@ const CompanyVideo = () => {
               aria-hidden="true"
             />
 
-            {/* Bottom Gold Accent */}
+
+            {/* =================================================
+                Bottom Gold Accent
+            ================================================= */}
+
             <span
               className="
                 pointer-events-none
@@ -89,7 +191,11 @@ const CompanyVideo = () => {
               aria-hidden="true"
             />
 
-            {/* Video */}
+
+            {/* =================================================
+                Video
+            ================================================= */}
+
             <div
               className="
                 relative
@@ -101,7 +207,9 @@ const CompanyVideo = () => {
                 sm:rounded-2xl
               "
             >
+
               <video
+                ref={videoRef}
                 className="
                   absolute
                   inset-0
@@ -110,21 +218,35 @@ const CompanyVideo = () => {
                   object-cover
                 "
                 controls
-                preload="metadata"
+                autoPlay
+                muted
                 playsInline
-                aria-label={t("companyVideo.videoLabel")}
+                preload="metadata"
+                aria-label={t(
+                  "companyVideo.videoLabel"
+                )}
               >
+
                 <source
                   src={companyVideo}
                   type="video/mp4"
                 />
 
-                {t("companyVideo.videoNotSupported")}
+                {t(
+                  "companyVideo.videoNotSupported"
+                )}
+
               </video>
+
             </div>
+
           </div>
 
-          {/* Caption */}
+
+          {/* ===================================================
+              Caption
+          =================================================== */}
+
           <p
             className="
               mx-auto
@@ -142,10 +264,14 @@ const CompanyVideo = () => {
           >
             {t("companyVideo.caption")}
           </p>
+
         </div>
+
       </div>
+
     </section>
   );
 };
+
 
 export default CompanyVideo;

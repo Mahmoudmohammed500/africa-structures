@@ -30,12 +30,11 @@ homeSections: {
   video: "Company Introduction Video",
 },
 
-      aboutSections: {
-        overview: "Company Overview",
-        vision: "Our Vision",
-        mission: "Our Mission",
-        values: "Our Values",
-      },
+    aboutSections: {
+  overview: "Company Overview",
+  vision: "Our Vision & Goal",
+  location: "Company Location",
+},
 
       marketingSections: {
         overview: "Overview",
@@ -967,6 +966,179 @@ companyVideo: {
   caption:
     "A visual introduction to the company, its capabilities, and integrated solutions.",
 },
+
+aboutData: {
+  intro: {
+    eyebrow: "AFRICA STRUCTURES",
+
+    title: "About Us",
+
+    description:
+      "Africa Structures is one of the leading companies specialized in manufacturing tents and all types of coverings using modern technologies.",
+
+    details:
+      "Since September 2022, the company has been operating in the manufacturing of all types of tents, awnings, canopies, parking and shopping mall coverings, in addition to ready-made garments, furnishings, advertising works, and related solutions using modern technologies.",
+
+    imageAlt:
+      "Africa Structures",
+
+    imageBrand:
+      "AFRICA STRUCTURES",
+
+    imageLabel:
+      "Integrated Industrial Solutions",
+
+    badgeLabel:
+      "Manufacturing Fields",
+
+    badgeTitle:
+      "Diverse & Advanced Solutions",
+
+    contentLabel:
+      "Company Overview",
+
+    contentTitle:
+      "Industrial Expertise Built on",
+
+    contentTitleHighlight:
+      "Innovation & Development",
+
+    features: {
+      quality: {
+        label: "Quality",
+        title: "Reliable",
+      },
+
+      manufacturing: {
+        label: "Manufacturing",
+        title: "Advanced",
+      },
+
+      solutions: {
+        label: "Solutions",
+        title: "Integrated",
+      },
+    },
+  },
+
+  vision: {
+    sectionEyebrow:
+      "Our Vision & Goal",
+
+    sectionTitle:
+      "Towards a Sustainable Industrial Future",
+
+    eyebrow:
+      "Our Vision",
+
+    title:
+      "Building an Integrated Industrial Entity",
+
+    description:
+      "Building an integrated industrial entity in accordance with international standards and aligned with national development plans, aiming to achieve comprehensive economic development based on maximizing company resources, diversifying income sources, and achieving rapid and sustainable growth.",
+  },
+
+  goal: {
+    eyebrow:
+      "Our Goal",
+
+    title:
+      "Leadership Through Innovation",
+
+    description:
+      "To make Africa Structures a leading company in the production of all types of tents and awnings, ready-made garments and furnishings, and advertising works through continuous innovation and development, providing unique solutions that meet the needs of local and regional markets at competitive prices.",
+
+    footer:
+      "Continuous Innovation • Sustainable Growth",
+  },
+
+  location: {
+    sectionEyebrow:
+      "Current Headquarters",
+
+    sectionTitle:
+      "Africa Structures Location",
+
+    introEyebrow:
+      "Company Headquarters",
+
+    title:
+      "Robbiki Leather City",
+
+    description:
+      "The company was relocated from its previous headquarters in Badr City to its current headquarters in Robbiki Leather City, supporting the development and expansion of its industrial operations.",
+
+    highlightLabel:
+      "Current Location",
+
+    highlightTitle:
+      "Robbiki Leather City",
+
+    highlightDescription:
+      "Beside Geneifa Road and the Regional Road",
+
+    factoriesLabel:
+      "Factories",
+
+    factories:
+      "H4 - H5 - H6",
+
+    areaLabel:
+      "Area",
+
+    area:
+      "6,000 m²",
+
+    dateLabel:
+      "Relocation Date",
+
+    date:
+      "01 / 10 / 2025",
+
+    accessLabel:
+      "Access",
+
+    access:
+      "Robbiki, Geneifa & Regional Road",
+
+    addressLabel:
+      "Address",
+
+    address:
+      "Current headquarters at Robbiki Leather City",
+
+    addressLine2:
+      "Factories H4 - H5 - H6",
+
+    addressLine3:
+      "Beside Geneifa Road and the Regional Road",
+
+    mapLabel:
+      "Geographical Location",
+
+    mapTitle:
+      "Current Company Headquarters",
+
+    mapStatus:
+      "Robbiki Leather City",
+
+    popupCompany:
+      "Africa Structures",
+
+    popupCurrent:
+      "Current Headquarters",
+
+    popupLocation:
+      "Robbiki Leather City",
+
+    popupFactories:
+      "H4 - H5 - H6 Factories",
+
+    mapsLink:
+      "Open Location on Maps",
+  },
+},
+
 
   },
 };

@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { Suspense } from "react";
 import {
   BrowserRouter,
   Route,
@@ -6,7 +6,9 @@ import {
 } from "react-router-dom";
 
 import MainLayout from "./components/layout/MainLayout/MainLayout";
+
 import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
 
 // const Home = lazy(() => import("./pages/Home/Home"));
 // const About = lazy(() => import("./pages/About/About"));
@@ -29,19 +31,18 @@ export default function App() {
     <BrowserRouter>
       <Suspense fallback={null}>
         <Routes>
-
           <Route element={<MainLayout />}>
-
-            { <Route
+            <Route
               path="/"
               element={<Home />}
             />
 
-           /* <Route
+            <Route
               path="/about"
               element={<About />}
             />
 
+            {/*
             <Route
               path="/projects"
               element={<Projects />}
@@ -65,10 +66,9 @@ export default function App() {
             <Route
               path="/contact"
               element={<Contact />}
-            /> */}
-
+            />
+            */}
           </Route>
-
         </Routes>
       </Suspense>
     </BrowserRouter>

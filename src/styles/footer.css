@@ -433,28 +433,13 @@
 
 .footer-link-arrow {
   opacity: 0;
-
-  color:
-    var(--color-accent);
-
-  transform:
-    translateX(5px);
-
-  transition:
-    opacity 180ms ease,
-    transform 180ms ease;
-
-  -webkit-transform:
-    translateX(5px);
-
-  -moz-transform:
-    translateX(5px);
-
-  -ms-transform:
-    translateX(5px);
-
-  -o-transform:
-    translateX(5px);
+  color:    var(--color-accent);
+  transform:    translateX(5px);
+  transition:    opacity 180ms ease,    transform 180ms ease;
+  -webkit-transform:    translateX(5px);
+  -moz-transform:    translateX(5px);
+  -ms-transform:    translateX(5px);
+  -o-transform:    translateX(5px);
 }
 
 

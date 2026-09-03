@@ -131,6 +131,10 @@
 
 .historical-overview__image-frame:hover img {
   transform: scale(1.035);
+  -webkit-transform: scale(1.035);
+  -moz-transform: scale(1.035);
+  -ms-transform: scale(1.035);
+  -o-transform: scale(1.035);
 }
 
 
@@ -363,10 +367,18 @@
 
 [dir="rtl"] .historical-overview__link:hover svg {
   transform: translateX(-3px);
+  -webkit-transform: translateX(-3px);
+  -moz-transform: translateX(-3px);
+  -ms-transform: translateX(-3px);
+  -o-transform: translateX(-3px);
 }
 
 [dir="ltr"] .historical-overview__link:hover svg {
   transform: translateX(3px);
+  -webkit-transform: translateX(3px);
+  -moz-transform: translateX(3px);
+  -ms-transform: translateX(3px);
+  -o-transform: translateX(3px);
 }
 
 
@@ -455,5 +467,9 @@
 
   .historical-overview__image-frame:hover img {
     transform: none;
-  }
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+}
 }
