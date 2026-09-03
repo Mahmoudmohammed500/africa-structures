@@ -7,6 +7,7 @@ import {
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import ScrollToTop from "../../common/ScrollToTop/ScrollToTop";
 
 export default function MainLayout() {
   const location = useLocation();
@@ -84,9 +85,9 @@ export default function MainLayout() {
         <Outlet />
       </main>
 
-      {/* <ScrollToTop /> */
+      <ScrollToTop /> 
 
-      <Footer /> }
+      <Footer /> 
     </>
   );
 }
