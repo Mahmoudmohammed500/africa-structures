@@ -1,0 +1,198 @@
+/* =========================================
+   RTL / LTR - CONTENT ELEMENTS ONLY
+   Main layout stays unchanged
+========================================= */
+
+
+/* =========================================
+   CAPABILITIES & ACHIEVEMENTS
+   Icon + Text follow language direction
+========================================= */
+
+/* ---------- Arabic ---------- */
+
+.sector-page[dir="rtl"] .sector-capabilities__item,
+.sector-page[dir="rtl"] .sector-achievements__item {
+  direction: rtl;
+  text-align: right;
+}
+
+
+/* ---------- English ---------- */
+
+.sector-page[dir="ltr"] .sector-capabilities__item,
+.sector-page[dir="ltr"] .sector-achievements__item {
+  direction: ltr;
+  text-align: left;
+}
+
+
+/* =========================================
+   CAPABILITIES ICON
+========================================= */
+
+/* Arabic → icon on the right */
+
+.sector-page[dir="rtl"] .sector-capabilities__icon {
+  order: 0;
+}
+
+
+/* English → icon on the left */
+
+.sector-page[dir="ltr"] .sector-capabilities__icon {
+  order: 0;
+}
+
+
+/* =========================================
+   ACHIEVEMENTS ICON
+========================================= */
+
+/* Arabic → icon on the right */
+
+.sector-page[dir="rtl"] .sector-achievements__icon {
+  order: 0;
+}
+
+
+/* English → icon on the left */
+
+.sector-page[dir="ltr"] .sector-achievements__icon {
+  order: 0;
+}
+
+
+/* =========================================
+   PRODUCT CARD CONTENT
+========================================= */
+
+/* Arabic */
+
+.sector-page[dir="rtl"] .sector-product-card__content {
+  direction: rtl;
+  text-align: right;
+}
+
+
+/* English */
+
+.sector-page[dir="ltr"] .sector-product-card__content {
+  direction: ltr;
+  text-align: left;
+}
+
+
+/* =========================================
+   PRODUCT DETAILS BUTTON
+========================================= */
+
+/* Arabic */
+
+.sector-page[dir="rtl"] .sector-product-card__details {
+  direction: rtl;
+}
+
+
+/* English */
+
+.sector-page[dir="ltr"] .sector-product-card__details {
+  direction: ltr;
+}
+
+
+/* =========================================
+   PRODUCT DETAILS ARROW
+========================================= */
+
+/* Arabic */
+
+.sector-page[dir="rtl"]
+.sector-product-card__details
+svg {
+  transform: none;
+}
+
+
+/* English */
+
+.sector-page[dir="ltr"]
+.sector-product-card__details
+svg {
+  transform: scaleX(-1);
+}
+
+
+/* =========================================
+   GENERAL TEXT ALIGNMENT
+========================================= */
+
+/* Arabic */
+
+.sector-page[dir="rtl"] .sector-hero__content,
+.sector-page[dir="rtl"] .sector-capabilities__content,
+.sector-page[dir="rtl"] .sector-achievements__content {
+  text-align: right;
+}
+
+
+/* English */
+
+.sector-page[dir="ltr"] .sector-hero__content,
+.sector-page[dir="ltr"] .sector-capabilities__content,
+.sector-page[dir="ltr"] .sector-achievements__content {
+  text-align: left;
+}
+
+
+/* =========================================
+   CAPABILITIES ITEM TEXT
+========================================= */
+
+.sector-page[dir="rtl"]
+.sector-capabilities__item
+span {
+  text-align: right;
+}
+
+.sector-page[dir="ltr"]
+.sector-capabilities__item
+span {
+  text-align: left;
+}
+
+
+/* =========================================
+   ACHIEVEMENTS ITEM TEXT
+========================================= */
+
+.sector-page[dir="rtl"]
+.sector-achievements__text {
+  text-align: right;
+}
+
+.sector-page[dir="ltr"]
+.sector-achievements__text {
+  text-align: left;
+}
+
+
+/* =========================================
+   HERO LINE
+   Follow text direction
+========================================= */
+
+/* Arabic */
+
+.sector-page[dir="rtl"] .sector-hero__line {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+
+/* English */
+
+.sector-page[dir="ltr"] .sector-hero__line {
+  margin-left: 0;
+  margin-right: auto;
+}

@@ -3,7 +3,7 @@ const en = {
     nav: {
       home: "Home",
       about: "About Us",
-      sctors: "Projects",
+      tentsctor: "tent sctor",
       products: "Products",
       quality_certificates: "Quality Certificates",
       marketing: "Community Engagement",
@@ -591,8 +591,351 @@ aboutData: {
       "Open Location on Maps",
   },
 },
+sectors: {
+  tents: {
 
+    hero: {
+      eyebrow: "Africa Structures Sectors",
 
+      title: "Tents Sector",
+
+      description:
+        "We provide integrated solutions for manufacturing various types of tents, coverings, and shades, meeting the highest quality standards to fulfill the requirements of different clients and projects.",
+
+      breadcrumb: "Tents Sector",
+    },
+
+    capabilities: {
+      eyebrow: "Sector Capabilities",
+
+      title:
+        "Advanced Production and Technical Capabilities",
+
+      description:
+        "The Tents Sector has specialized expertise and capabilities in manufacturing various types of tents and executing covering and shading solutions, meeting the requirements of diverse projects in accordance with the highest quality standards.",
+
+      items: [
+        "Manufacturing all types of tents, including military, shelter, relief, and other specialized tents.",
+
+        "Executing covering solutions for shopping malls and car parks, similar to car markets, in addition to manufacturing shades and umbrellas.",
+      ],
+    },
+
+    achievements: {
+      eyebrow: "Sector Achievements",
+
+      title:
+        "Experience and Achievements Across Diverse Projects",
+
+      description:
+        "We take pride in the achievements of the Tents Sector through the supply and execution of various projects, while maintaining international standards and high quality to meet the requirements of different clients and organizations.",
+
+      items: [
+        "Supply of 9,463 tents measuring 4×5 meters, manufactured according to special specifications and compliant with high-quality international standards.",
+
+        "Supply of 7,200 tents in sizes 4×4 and 6×6 meters, manufactured according to internationally recognized standard specifications for various organizations.",
+
+        "Supply and installation of decorative coverings for open spaces at Diamond Commercial and Administrative Center.",
+      ],
+    },
+
+    products: {
+
+      eyebrow: "Sector Products",
+
+      title:
+        "Tents Sector Products and Solutions",
+
+      description:
+        "A diverse range of tents, shades, and covering solutions designed to meet the requirements of various projects.",
+
+      viewDetails: "View Details",
+
+      requestQuote: "Request a Quote",
+
+      previous: "Previous Product",
+
+      next: "Next Product",
+
+      backToProducts:
+        "Back to Sector Products",
+
+      productDetails:
+        "Product Details",
+
+      specifications:
+        "Specifications",
+
+      gallery:
+        "Image Gallery",
+
+      previousImage:
+        "Previous Image",
+
+      nextImage:
+        "Next Image",
+
+      closeImage:
+        "Close Image",
+
+      openImage:
+        "View Image Full Size",
+
+      fixedAwwTents: {
+
+        title:
+          "Fixed AWW Tents",
+
+        shortDescription:
+          "A fixed tent featuring an aluminum structure, hot-dip galvanized steel accessories, and a high-quality weather-resistant cover.",
+
+        details:
+          "A fixed tent manufactured with an aluminum structure and hot-dip galvanized steel accessories, with electrostatic painting available upon request. The cover is made of high-quality reinforced fixed fabric, providing long service life and resistance to weather conditions and ultraviolet radiation.",
+
+        specifications: [
+          "Aluminum structure.",
+          "Hot-dip galvanized steel accessories.",
+          "Electrostatic painting available upon request.",
+          "High-quality reinforced fixed cover.",
+          "Weather-resistant cover.",
+          "UV-resistant cover.",
+          "Available for sale or rental.",
+          "Suitable for celebrations, exhibitions, and camps.",
+          "Available in different sizes and heights according to project requirements.",
+        ],
+      },
+
+      fixedSteelTents: {
+
+        title:
+          "Fixed Steel Tents",
+
+        shortDescription:
+          "A fixed tent with a steel structure coated with anti-rust paint, featuring a high-quality weather-resistant cover.",
+
+        details:
+          "A fixed tent manufactured with a steel structure coated with anti-rust paint, hot-dip galvanized steel accessories, and high-quality electrostatic painting with weather resistance. The cover is made of high-quality fabric and can be manufactured in different sizes according to the intended use.",
+
+        specifications: [
+          "Steel structure.",
+          "Anti-rust coating.",
+          "Hot-dip galvanized steel accessories.",
+          "Electrostatic painting available.",
+          "High-quality cover material.",
+          "Weather resistant.",
+          "Available in 4×4 meter sizes.",
+          "Available in 4×5 meter sizes.",
+          "Available in 6×4 meter sizes.",
+          "Available in 6×5 meter sizes.",
+          "Available in 6×6 meter sizes.",
+          "Suitable for camping and various applications.",
+          "Available for sale or rental.",
+        ],
+      },
+
+      fixedTentPergola: {
+
+        title:
+          "Fixed Tent / Pergola",
+
+        shortDescription:
+          "A fixed tent installed on rear columns or directly on a wall, available in customized sizes according to site conditions.",
+
+        details:
+          "A fixed tent installed on rear columns or directly on a wall, manufactured in different sizes according to site conditions and project requirements. The cover is available in high-quality PVC or HDPE, with the option of using high-quality reinforced fabric.",
+
+        specifications: [
+          "Installation on rear columns or walls.",
+          "Customized dimensions according to site conditions.",
+          "PVC cover material.",
+          "HDPE cover material.",
+          "High-quality materials.",
+          "Weather resistant.",
+          "UV resistant.",
+          "Option for reinforced high-quality cover material.",
+          "Electrostatic painting available.",
+        ],
+      },
+
+      carParking: {
+
+        title:
+          "Car Parking Structures",
+
+        shortDescription:
+          "Car parking structures available in pyramid and double configurations, supported by galvanized steel structures resistant to corrosion.",
+
+        details:
+          "Car parking structures available in pyramid, Back-to-Back double, and dome configurations, mounted on galvanized and corrosion-resistant steel frames. The units can be manufactured in different sizes and configurations according to project requirements.",
+
+        specifications: [
+          "Galvanized steel frame.",
+          "Corrosion resistant.",
+          "Pyramid configuration available.",
+          "Back-to-Back configuration available.",
+          "Dome configuration available.",
+          "Available in different sizes.",
+          "PVC cover material.",
+          "HDPE cover material.",
+          "High-quality materials.",
+          "Weather resistant.",
+        ],
+      },
+
+      wireTentCanopy: {
+
+        title:
+          "Wire Tent Canopy",
+
+        shortDescription:
+          "A movable wire-operated canopy with manual or motorized opening and closing using remote control.",
+
+        details:
+          "A movable wire-operated canopy mounted on a galvanized and corrosion-resistant steel frame, with manual or motorized opening and closing using a remote control. Available with high-quality cover materials suitable for different applications.",
+
+        specifications: [
+          "Movable wire-operated canopy.",
+          "Manual opening and closing.",
+          "Motorized opening and closing option.",
+          "Remote control.",
+          "Galvanized steel frame.",
+          "Corrosion resistant.",
+          "PVC cover material.",
+          "HDPE cover material.",
+          "High-quality materials.",
+          "UV resistant.",
+        ],
+      },
+
+      tensileShade: {
+
+        title:
+          "Tensile Shade",
+
+        shortDescription:
+          "A tensile covering installed on galvanized steel columns or walls, available in various sizes, colors, and configurations.",
+
+        details:
+          "A tensile covering installed on galvanized and corrosion-resistant steel columns or mounted on walls according to site conditions. Available in different sizes and colors, using high-quality cover materials resistant to weather conditions and ultraviolet radiation.",
+
+        specifications: [
+          "Galvanized steel columns.",
+          "Corrosion resistant.",
+          "Wall-mounted installation option.",
+          "Available in different sizes.",
+          "Available in different colors.",
+          "HDPE cover material.",
+          "PVC cover material.",
+          "Weather resistant.",
+          "UV resistant.",
+        ],
+      },
+
+      pergolaPyramidShape: {
+
+        title:
+          "Pyramid Shape Pergola",
+
+        shortDescription:
+          "A pyramid-shaped pergola mounted on painted and galvanized steel or treated wood, designed to withstand different weather conditions.",
+
+        details:
+          "A pyramid-shaped pergola mounted on a painted, galvanized, and corrosion-resistant steel frame, or treated wood resistant to various weather conditions. The pergola can be manufactured in different dimensions according to project requirements.",
+
+        specifications: [
+          "Pyramid-shaped design.",
+          "Steel frame.",
+          "Painted and galvanized steel.",
+          "Corrosion resistant.",
+          "Treated wood option.",
+          "Weather resistant.",
+          "Air-conditioning installation option when using PVC cover material.",
+          "Available in various covering dimensions.",
+          "3×3 meter size available.",
+          "3×4 meter size available.",
+          "4×4 meter size available.",
+          "4×5 meter size available.",
+          "5×5 meter size available.",
+        ],
+      },
+
+      woodenUmbrella: {
+
+        title:
+          "Wooden Umbrella",
+
+        shortDescription:
+          "A high-quality wooden umbrella with a stable base and UV-resistant HDPE cover, designed for outdoor applications.",
+
+        details:
+          "A wooden umbrella equipped with a beech wood central pole and a specially designed weighted base for stability. The wood is treated against weather conditions and the product is available in different colors. The HDPE cover is high quality and UV resistant.",
+
+        specifications: [
+          "Beech wood central pole.",
+          "Weather-treated wood.",
+          "Available in different colors.",
+          "HDPE cover material.",
+          "High-quality cover.",
+          "UV resistant.",
+          "60×60 cm base.",
+          "Base covered with gravel or marble chips.",
+          "Optional wheels for the base.",
+        ],
+      },
+
+      cantileverUmbrella: {
+
+        title:
+          "Cantilever Umbrella",
+
+        shortDescription:
+          "A side-mounted cantilever umbrella with manual winch operation, featuring a corrosion-resistant frame and high-quality HDPE cover.",
+
+        details:
+          "A side-mounted cantilever umbrella with manual opening and closing using a winch. The frame is made of galvanized, corrosion-resistant steel or treated wood resistant to weather conditions. Available with a high-quality HDPE cover treated for UV resistance.",
+
+        specifications: [
+          "Side-mounted cantilever design.",
+          "Manual opening and closing using a winch.",
+          "Galvanized steel frame.",
+          "Corrosion resistant.",
+          "Treated wood option.",
+          "Weather resistant.",
+          "HDPE cover material.",
+          "High-quality cover.",
+          "UV treated.",
+          "Painted and corrosion-resistant steel base.",
+          "Base filled with marble pieces.",
+          "40×40 cm base size.",
+        ],
+      },
+
+      specialCoverings: {
+
+        title:
+          "Special Coverings for Malls and Hotels",
+
+        shortDescription:
+          "Specialized covering solutions for malls and hotels using high-quality materials and designs adapted to different sites.",
+
+        details:
+          "Special covering solutions for malls and hotels using galvanized and corrosion-resistant steel frames or treated wood resistant to weather conditions, combined with high-quality cover materials available in various colors.",
+
+        specifications: [
+          "Galvanized steel frame.",
+          "Corrosion resistant.",
+          "Treated wood option.",
+          "Weather resistant.",
+          "HDPE cover material.",
+          "High-quality cover.",
+          "UV resistant.",
+          "Available in different colors.",
+          "Designs suitable for malls and hotels.",
+        ],
+      },
+    },
+  },
+},
   },
 };
 

@@ -51,8 +51,8 @@ export const navigationItems: NavigationItem[] = [
 
 
   {
-    path: "/projects",
-    labelKey: "nav.sctors",
+    path: "/sectors/tents",
+    labelKey: "nav.tentsctor",
 
     children: [
       {

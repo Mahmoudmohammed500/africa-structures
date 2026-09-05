@@ -183,10 +183,10 @@
   color: var(--color-white);
 
   background:
-    rgba(18, 53, 39, 0.92);
+    var(--color-secondary);
 
   border-inline-start:
-    3px solid var(--color-secondary);
+    3px solid var(--color-primary);
 
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -198,7 +198,7 @@
 .historical-overview__date svg {
   flex-shrink: 0;
 
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .historical-overview__date div {

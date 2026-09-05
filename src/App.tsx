@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+
 import {
   BrowserRouter,
   Route,
@@ -9,6 +10,9 @@ import MainLayout from "./components/layout/MainLayout/MainLayout";
 
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
+import TentsSector from "./pages/sectors/TentsSector";
+import ProductDetailsPage from "./pages/sectors/ProductDetailsPage";
+
 
 // const Home = lazy(() => import("./pages/Home/Home"));
 // const About = lazy(() => import("./pages/About/About"));
@@ -29,18 +33,56 @@ import About from "./pages/About/About";
 export default function App() {
   return (
     <BrowserRouter>
+
       <Suspense fallback={null}>
+
         <Routes>
+
           <Route element={<MainLayout />}>
+
+            {/* =====================================
+                Home
+            ====================================== */}
+
             <Route
               path="/"
               element={<Home />}
             />
 
+            {/* =====================================
+                About
+            ====================================== */}
+
             <Route
               path="/about"
               element={<About />}
             />
+
+            {/* =====================================
+                Tents Sector
+            ====================================== */}
+
+            <Route
+              path="/sectors/tents"
+              element={<TentsSector />}
+            />
+
+            {/* =====================================
+                Product Details
+                مثال:
+                /sectors/tents/products/1
+            ====================================== */}
+
+            <Route
+              path="/sectors/:sector/products/:productId"
+              element={
+                <ProductDetailsPage />
+              }
+            />
+
+            {/* =====================================
+                باقي الصفحات
+            ====================================== */}
 
             {/*
             <Route
@@ -55,7 +97,9 @@ export default function App() {
 
             <Route
               path="/quality-certificates"
-              element={<QualityCertificates />}
+              element={
+                <QualityCertificates />
+              }
             />
 
             <Route
@@ -68,9 +112,13 @@ export default function App() {
               element={<Contact />}
             />
             */}
+
           </Route>
+
         </Routes>
+
       </Suspense>
+
     </BrowserRouter>
   );
 }
